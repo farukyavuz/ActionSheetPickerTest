@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67FE2E13CCFB968773AA0BD0 /* Pods_ActionSheetPickerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2270479D1CF7D75AE1A514BE /* Pods_ActionSheetPickerTest.framework */; };
 		EB4D39AA20A8809A00C81143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D39A920A8809A00C81143 /* AppDelegate.swift */; };
 		EB4D39AC20A8809A00C81143 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D39AB20A8809A00C81143 /* ViewController.swift */; };
 		EB4D39AF20A8809A00C81143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4D39AD20A8809A00C81143 /* Main.storyboard */; };
 		EB4D39B120A8809B00C81143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4D39B020A8809B00C81143 /* Assets.xcassets */; };
 		EB4D39B420A8809B00C81143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4D39B220A8809B00C81143 /* LaunchScreen.storyboard */; };
+		EB52E8CD20A8D9D8003DADCE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EB52E8CC20A8D9D8003DADCE /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2270479D1CF7D75AE1A514BE /* Pods_ActionSheetPickerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActionSheetPickerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		668E5D9672519AC520A4147E /* Pods-ActionSheetPickerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionSheetPickerTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActionSheetPickerTest/Pods-ActionSheetPickerTest.debug.xcconfig"; sourceTree = "<group>"; };
+		80920135897A63349A2EF315 /* Pods-ActionSheetPickerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionSheetPickerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActionSheetPickerTest/Pods-ActionSheetPickerTest.release.xcconfig"; sourceTree = "<group>"; };
 		EB4D39A620A8809A00C81143 /* ActionSheetPickerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActionSheetPickerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4D39A920A8809A00C81143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB4D39AB20A8809A00C81143 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		EB4D39B020A8809B00C81143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB4D39B320A8809B00C81143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB4D39B520A8809B00C81143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB52E8CC20A8D9D8003DADCE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67FE2E13CCFB968773AA0BD0 /* Pods_ActionSheetPickerTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		077507A6925192E6EF05053F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB52E8CC20A8D9D8003DADCE /* .gitignore */,
+				2270479D1CF7D75AE1A514BE /* Pods_ActionSheetPickerTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC91666B4BB3374076547963 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				668E5D9672519AC520A4147E /* Pods-ActionSheetPickerTest.debug.xcconfig */,
+				80920135897A63349A2EF315 /* Pods-ActionSheetPickerTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EB4D399D20A8809A00C81143 = {
 			isa = PBXGroup;
 			children = (
 				EB4D39A820A8809A00C81143 /* ActionSheetPickerTest */,
 				EB4D39A720A8809A00C81143 /* Products */,
+				BC91666B4BB3374076547963 /* Pods */,
+				077507A6925192E6EF05053F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB4D39B820A8809B00C81143 /* Build configuration list for PBXNativeTarget "ActionSheetPickerTest" */;
 			buildPhases = (
+				52B39AF2AA195CFC6534BAB4 /* [CP] Check Pods Manifest.lock */,
 				EB4D39A220A8809A00C81143 /* Sources */,
 				EB4D39A320A8809A00C81143 /* Frameworks */,
 				EB4D39A420A8809A00C81143 /* Resources */,
+				14B5FE31EF06199530658AC0 /* [CP] Embed Pods Frameworks */,
+				D063AF6AB473142460F3BFE2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB52E8CD20A8D9D8003DADCE /* .gitignore in Resources */,
 				EB4D39B420A8809B00C81143 /* LaunchScreen.storyboard in Resources */,
 				EB4D39B120A8809B00C81143 /* Assets.xcassets in Resources */,
 				EB4D39AF20A8809A00C81143 /* Main.storyboard in Resources */,
@@ -129,6 +160,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14B5FE31EF06199530658AC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ActionSheetPickerTest/Pods-ActionSheetPickerTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ActionSheetPickerTest/Pods-ActionSheetPickerTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52B39AF2AA195CFC6534BAB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ActionSheetPickerTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D063AF6AB473142460F3BFE2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ActionSheetPickerTest/Pods-ActionSheetPickerTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB4D39A220A8809A00C81143 /* Sources */ = {
@@ -213,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -278,6 +363,7 @@
 		};
 		EB4D39B920A8809B00C81143 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 668E5D9672519AC520A4147E /* Pods-ActionSheetPickerTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +382,7 @@
 		};
 		EB4D39BA20A8809B00C81143 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80920135897A63349A2EF315 /* Pods-ActionSheetPickerTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
